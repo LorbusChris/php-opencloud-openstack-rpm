@@ -17,18 +17,18 @@
 
 %global github_owner   php-opencloud
 %global github_name    openstack
-%global github_version 3.0.5
-%global github_commit  2883c92cdfe05d4a11533497c2b74cc018c7cf0b
+%global github_version 3.0.6
+%global github_commit  3eba351cd04cf73a54984334e5da2fe4cf6efe1a
 
 %global composer_vendor  php-opencloud
 %global composer_project openstack
 
 # "php" : "~7.0"
 %global php_min_ver 7.0
-# "guzzlehttp/http" : "~6.1"
+# "guzzlehttp/http" : "^6.1"
 %global guzzle_min_ver 6.1
 %global guzzle_max_ver 7
-# "justinrainbow/json-schema": "~5.2"
+# "justinrainbow/json-schema": "^5.2"
 %global json_schema_min_ver 5.2
 %global json_schema_max_ver 6
 
@@ -39,7 +39,7 @@
 
 Name:           php-opencloud-openstack
 Version:        %{github_version}
-Release:        4%{?github_release}%{?dist}
+Release:        1%{?github_release}%{?dist}
 Summary:        PHP SDK for OpenStack clouds
 
 License:        ASL 2.0
@@ -193,6 +193,9 @@ AUTOLOAD
 
 
 %changelog
+* Sun Jul 28 2019 Christian Glombek <lorbus@fedoraproject.org> - 3.0.6-1
+- Update to version 3.0.6
+
 * Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 3.0.5-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 
